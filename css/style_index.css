@@ -1,0 +1,133 @@
+html {
+    --pure-white: #ffffff;
+    --white100: #ebe3ff;
+    --white75: #b9b3c8;
+    --white50: #878292;
+    --white25: #55525b;
+    --black: #232124;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white100);
+    font-size: 1.8em;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border-bottom: var(--white50) solid .1rem;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: .5ch 5vw 0 auto;
+}
+
+.header-menu a {
+    padding: 0 4vw;
+    text-decoration: none;
+    color: var(--white100);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white100);
+}
+
+a:hover {
+    color: var(--pure-white);
+}
+
+.logo {
+    font-size: 3rem;
+    margin: .5ch 2ch .5ch 2ch;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+p {
+    margin: 0 0 8vh 1vw;
+    color: var(--white75);
+}
+
+.container {
+    width: 70vw;
+    margin: auto;
+    padding: 10vh 5vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    font-size: 2rem;
+}
+
+tr {
+    border-bottom: var(--white25) solid .05rem;
+}
+
+td {
+    min-width: 10vw;
+    height: 6vh; 
+}
+
+.row-item {
+    color: var(--white75);
+}
+
+td.col-thin {
+    min-width: 2vw;
+    text-align: center;
+}
+
+.graph-bar {
+    background-color: var(--white75);
+    height: 4vh; 
+    margin-bottom: 3vh; 
+
+}
+
+@media only screen and (max-width: 576px) {
+    .logo {
+        font-size: 2rem;
+        margin: .5ch 2ch .5ch 2ch;
+        padding: 0;
+    }
+
+    .header-menu a {
+        padding: 0 2vw;
+        text-decoration: none;
+        color: var(--white100);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 0;
+        padding: auto;
+    }
+
+    td {
+        height: 8vh;
+    }
+
+    .col-thin {
+        display: none;
+    }
+}
