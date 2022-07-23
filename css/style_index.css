@@ -104,12 +104,21 @@ td.col-thin {
 @media only screen and (max-width: 576px) {
     .logo {
         font-size: 2rem;
-        margin: .5ch 2ch .5ch 2ch;
         padding: 0;
+        text-align: center;
+    }
+
+    header {
+        display: block;
+    }
+
+    .header-menu {
+        display: none;
     }
 
     .header-menu a {
         padding: 0 2vw;
+        margin: 1vh;
         text-decoration: none;
         color: var(--white100);
     }
@@ -129,5 +138,11 @@ td.col-thin {
 
     .col-thin {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    table {
+        font-size: 1.5rem;
     }
 }
